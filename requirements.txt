@@ -1,11 +1,5 @@
 streamlit
 pandas
 scikit-learn
-streamlit
 numpy
 seaborn
-matplotlib.pyplot
-StandardScaler
-KNeighborsClassifier
-RandomForestClassifier
-LinearRegression
