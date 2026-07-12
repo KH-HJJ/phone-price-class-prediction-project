@@ -2,7 +2,7 @@
 
 An interactive Streamlit app that explores a mobile phone specifications dataset and predicts a phone's price range from its technical features.
 
-**Live app:** _add your Streamlit Cloud link here once deployed_
+**Live app:** [_add your Streamlit Cloud link here once deployed_](https://phone-price-class-prediction-project-mezr89zuqvc6ghvq3ptnqh.streamlit.app/)
 
 ## Overview
 
