@@ -1,19 +1,19 @@
-# 💎 Mobile Price House
+# \u26A1 Mobile Price House
 
-An interactive Streamlit app that explores a mobile phone specifications dataset and predicts a phone's price tier from its technical features — designed as a refined "valuation house" experience.
+An interactive Streamlit app that explores a mobile phone specifications dataset and predicts a phone's price tier from its technical features — styled as a fintech dashboard.
 
 **Live app:** https://phone-price-class-prediction-project-mezr89zuqvc6ghvq3ptnqh.streamlit.app/
 
 ## Design
 
-Dark graphite background with an antique-gold accent, evoking premium phone finishes (space gray, brushed titanium). Price tiers are visually mapped on a steel → gold scale (Essentiel · Confort · Premium · Prestige), so color communicates ranking rather than just decorating it. Predictions are presented as a valuation certificate rather than plain text output.
+Dark near-black background, violet/mint gradient accents, dense KPI cards, and a ticker-strip header — the visual language of consumer fintech dashboards (Revolut/N26-style). Price tiers run on a blue \u2192 neon-mint scale (Essentiel \u2192 Confort \u2192 Premium \u2192 Prestige) so color reads as data, not decoration. Predictions are shown as a confirmation card with per-tier colored probability bars.
 
 ## Overview
 
-Two pages, accessible from the sidebar or the home page navigation cards:
+Two pages, accessible from the sidebar or the home page navigation tiles:
 
-- **Analyse des Données** — dataset overview, descriptive statistics, price-tier distribution, a correlation heatmap, and a variable-vs-price boxplot.
-- **Estimer un téléphone** — set phone specifications via sliders, choose a classification model (KNN, Logistic Regression, or Decision Tree), and get a tier estimate with class probabilities and test-set accuracy.
+- **Analyse des Données** — KPI cards, dataset overview, descriptive statistics, price-tier distribution, a correlation heatmap, and a variable-vs-price boxplot.
+- **Estimer un téléphone** — set phone specifications via sliders, choose a classification model (KNN, Logistic Regression, or Decision Tree), and get an instant tier estimate with class probabilities and test-set accuracy.
 
 ## Data
 
@@ -21,7 +21,7 @@ Two pages, accessible from the sidebar or the home page navigation cards:
 
 ## Models
 
-Three classifiers, trained on demand from the sidebar selection:
+Three classifiers, trained on demand from the sidebar selection. Test-set accuracy varies notably by model on this dataset: Logistic Regression ~98%, Decision Tree ~84%, KNN ~53%.
 - K-Nearest Neighbors
 - Logistic Regression
 - Decision Tree
