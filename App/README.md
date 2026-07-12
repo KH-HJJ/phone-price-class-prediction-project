@@ -1,32 +1,28 @@
-# \u26A1 Mobile Price House
+# 📱 Mobile Phone Price Range Prediction
 
-An interactive Streamlit app that explores a mobile phone specifications dataset and predicts a phone's price tier from its technical features — styled as a fintech dashboard.
+An interactive Streamlit app that explores a mobile phone specifications dataset and predicts a phone's price range from its technical features.
 
-**Live app:** https://phone-price-class-prediction-project-mezr89zuqvc6ghvq3ptnqh.streamlit.app/
-
-## Design
-
-Dark near-black background, violet/mint gradient accents, dense KPI cards, and a ticker-strip header — the visual language of consumer fintech dashboards (Revolut/N26-style). Price tiers run on a blue \u2192 neon-mint scale (Essentiel \u2192 Confort \u2192 Premium \u2192 Prestige) so color reads as data, not decoration. Predictions are shown as a confirmation card with per-tier colored probability bars.
+**Live app:** _add your Streamlit Cloud link here once deployed_
 
 ## Overview
 
-Two pages, accessible from the sidebar or the home page navigation tiles:
+The app has two pages, accessible from the sidebar:
 
-- **Analyse des Données** — KPI cards, dataset overview, descriptive statistics, price-tier distribution, a correlation heatmap, and a variable-vs-price boxplot.
-- **Estimer un téléphone** — set phone specifications via sliders, choose a classification model (KNN, Logistic Regression, or Decision Tree), and get an instant tier estimate with class probabilities and test-set accuracy.
+- **📊 Analyse des Données** — explore the dataset: summary statistics, price-range distribution, a feature correlation heatmap, and a variable-vs-price boxplot.
+- **🔍 Prédiction** — set phone specifications via sliders, choose a classification model (KNN, Logistic Regression, or Decision Tree), and get a predicted price range with class probabilities and test-set accuracy.
 
 ## Data
 
-`mobile_prices.csv` — 2,000 phones, 20 technical/categorical features (battery power, RAM, screen dimensions, connectivity, etc.), labeled with a `price_range` class from 0 to 3, evenly balanced across the four classes.
+`mobile_prices.csv` — 2,000 phones, 20 technical/categorical features (battery power, RAM, screen dimensions, connectivity, etc.), labeled with a `price_range` class from 0 (low cost) to 3 (very high cost), evenly balanced across the four classes.
 
 ## Models
 
-Three classifiers, trained on demand from the sidebar selection. Test-set accuracy varies notably by model on this dataset: Logistic Regression ~98%, Decision Tree ~84%, KNN ~53%.
+Three classifiers are trained on demand from the sidebar selection:
 - K-Nearest Neighbors
 - Logistic Regression
 - Decision Tree
 
-Features are standardized (`StandardScaler`) before an 80/20 train/test split, and the same scaler is applied to user input before prediction.
+Features are standardized (`StandardScaler`) before an 80/20 train/test split.
 
 ## Tools
 
@@ -46,7 +42,6 @@ streamlit run Home.py
 ```
 App/
 ├── Home.py
-├── style.py
 ├── mobile_prices.csv
 ├── requirements.txt
 ├── .streamlit/
